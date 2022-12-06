@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "848644210356",
+    "project_id": "flavour-test-51686",
+    "storage_bucket": "flavour-test-51686.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:848644210356:android:21c6760d4b46b4dc2ba1e1",
+        "android_client_info": {
+          "package_name": "com.example.expense_trackr.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "848644210356-2icj5ou9ifl82ndesd2ocrhimu7tbkvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHFWPsy3V0XhRI5I7nX3KivviumWHz5_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "848644210356-2icj5ou9ifl82ndesd2ocrhimu7tbkvo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
