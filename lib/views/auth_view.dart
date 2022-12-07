@@ -118,7 +118,30 @@ class _LoginViewState extends State<LoginView> {
 
                       CustomIconButton(
                           title: 'sigin with google',
-                          pressButton: () {},
+                          pressButton: () async {
+                            AuthService.signInWithGoogle();
+
+                            // GoogleSignIn _googleSignIn = GoogleSignIn(
+                            //   scopes: [
+                            //     'email',
+                            //   ],
+                            // );
+                            // try {
+                            //   // await _googleSignIn.signIn();
+
+                            //   // print(_googleSignIn.isSignedIn());
+
+                            //   GoogleSignInAccount? googleSignInAccount =
+                            //       await _googleSignIn.signIn();
+                            //   GoogleSignInAuthentication
+                            //       googleSignInAuthentication =
+                            //       await googleSignInAccount!.authentication;
+
+                            //       print(googleSignInAuthentication.accessToken);
+                            // } catch (error) {
+                            //   print(error);
+                            // }
+                          },
                           textColor: Colors.white,
                           buttonBg: AppColors.primaryColor)
                     ],

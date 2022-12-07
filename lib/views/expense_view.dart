@@ -113,7 +113,7 @@ class _ExpensesViewState extends State<ExpensesView> {
                                     padding: const EdgeInsets.only(
                                         left: 10,
                                         right: 10,
-                                        bottom: 40,
+                                        bottom: 20,
                                         top: 10),
                                     child: Wrap(
                                       // crossAxisAlignment:
@@ -352,7 +352,9 @@ class _ExpensesViewState extends State<ExpensesView> {
                                             .capitalizeFirstLetterOFSentence,
                                         style: const TextStyle(
                                             fontFamily: AppFonts.poppinsRegular,
-                                            fontWeight: FontWeight.bold),
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.black54
+                                            ),
                                       ),
                                       subtitle: Padding(
                                         padding: const EdgeInsets.symmetric(

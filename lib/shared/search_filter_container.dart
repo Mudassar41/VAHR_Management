@@ -23,7 +23,7 @@ class SearchFilterContainer extends StatelessWidget {
       child: InkWell(
         onTap: onTap,
         child: Container(
-          height: 60,
+          height: 55,
           decoration: BoxDecoration(
               color: AppColors.whiteShade,
               borderRadius: BorderRadius.all(Radius.circular(20.0))),

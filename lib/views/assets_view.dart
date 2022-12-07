@@ -95,7 +95,7 @@ class _AssetsViewState extends State<AssetsView> {
                                     padding: const EdgeInsets.only(
                                         left: 10,
                                         right: 10,
-                                        bottom: 40,
+                                        bottom: 20,
                                         top: 10),
                                     child: Wrap(
                                       children: [
@@ -304,7 +304,8 @@ class _AssetsViewState extends State<AssetsView> {
                                           .capitalizeFirstLetterOFSentence,
                                       style: const TextStyle(
                                           fontFamily: AppFonts.poppinsRegular,
-                                          fontWeight: FontWeight.bold),
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.black87),
                                     ),
                                     subtitle: Padding(
                                       padding: const EdgeInsets.symmetric(

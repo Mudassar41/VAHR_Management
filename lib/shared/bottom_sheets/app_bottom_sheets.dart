@@ -11,6 +11,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../../components/buttons.dart';
+import '../../components/text_field.dart';
 import '../../components/text_form_field.dart';
 import '../../models/department.dart';
 
@@ -97,15 +98,16 @@ class AppBottomSheets {
       required RemoteDBService dbService,
       IconData? icon}) {
     return showModalBottomSheet(
+        isScrollControlled: true,
         isDismissible: true,
         context: context,
         builder: (context) {
-          return SizedBox(
-            height: MediaQuery.of(context).size.height * sheetHieght,
+          return Padding(
+            padding: MediaQuery.of(context).viewInsets,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+              child: Wrap(
+                //crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(
                     height: 20,
@@ -117,6 +119,22 @@ class AppBottomSheets {
                       style: TextStyle(
                         fontFamily: AppFonts.poppinsBold,
                         fontSize: 20,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 8, right: 8),
+                    child: SizedBox(
+                      height: 50,
+                      child: TextField(
+                        decoration: InputDecoration(
+
+                            ///  hintText: 'Search Employee',
+                            labelText: 'Search Employee',
+                            prefixIcon: Icon(
+                              FontAwesomeIcons.magnifyingGlass,
+                              size: 15,
+                            )),
                       ),
                     ),
                   ),
@@ -140,8 +158,9 @@ class AppBottomSheets {
                                     fontSize: 18),
                               ),
                             )
-                          : Expanded(
-                              child: Scrollbar(
+                          : Scrollbar(
+                              child: SizedBox(
+                                height: 250,
                                 child: ListView.builder(
                                   shrinkWrap: true,
                                   physics: const ScrollPhysics(),
@@ -152,12 +171,12 @@ class AppBottomSheets {
                                         color: AppColors.primaryColor,
                                       ),
                                       title: Text(
-                                        snapshot.data!.docs[index]['firstName']
-                                            .toString()
-                                            .capitalizeFirstLetter,
+                                        '${snapshot.data!.docs[index]['firstName']} ${snapshot.data!.docs[index]['lastName']}'
+                                            .capitalizeFirstLetterOFSentence,
                                         style: TextStyle(
-                                          fontFamily: AppFonts.poppinsRegular,
-                                        ),
+                                            fontFamily: AppFonts.poppinsRegular,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.black45),
                                       ),
                                       onTap: () {
                                         tapToChangeVal(
@@ -181,7 +200,7 @@ class AppBottomSheets {
               ),
             ),
           );
-        });
+        }).whenComplete(() => print('sheet closed'));
   }
 
   static showFieldSheet(
@@ -254,7 +273,7 @@ class AppBottomSheets {
                                         Navigator.of(context).pop();
                                         formKey.currentState?.save();
                                         final departmentData = Department(
-                                           departmantCode: '',
+                                            departmantCode: '',
                                             departmentId: id.toString(),
                                             departmentName: controller.text,
                                             createdAt:

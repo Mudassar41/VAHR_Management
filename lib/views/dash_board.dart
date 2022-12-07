@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:expense_trackr/components/responsive.dart';
+import 'package:expense_trackr/service/auth_service.dart';
 import 'package:expense_trackr/service/remote_db_service.dart';
 import 'package:expense_trackr/shared/string_extensions.dart';
 import 'package:expense_trackr/shared/app_colors.dart';
@@ -88,7 +89,11 @@ class _DasboardViewState extends State<DasboardView> {
                               ),
                               TextButton(
                                   onPressed: () async {
+                                    await AuthService.googleSignIn.signOut();
                                     await FirebaseAuth.instance.signOut();
+
+
+                                  
                                   },
                                   child: Text(
                                     'Sign out',
