@@ -109,7 +109,7 @@ class _AddDepartmentViewState extends State<AddDepartmentView> {
                               provider.setUploadingValue(true);
                               Department department = Department(
                                   departmentName:
-                                      departmentNameTextController.text,
+                                      departmentNameTextController.text.trim(),
                                   departmantCode:
                                       departmentNumTextController.text,
                                   departmentId: widget.isUpdating == 'true'
