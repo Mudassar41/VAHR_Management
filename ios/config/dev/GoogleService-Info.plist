@@ -3,9 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>848644210356-jp1j5o7d39vsbb5fdlns2bot8j4tr89u.apps.googleusercontent.com</string>
+	<string>848644210356-hbegkg03bg6ourrav9l9l9nc83vttbvp.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.848644210356-jp1j5o7d39vsbb5fdlns2bot8j4tr89u</string>
+	<string>com.googleusercontent.apps.848644210356-hbegkg03bg6ourrav9l9l9nc83vttbvp</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>848644210356-q2f1ljk126qqqhulq60jna4e09m5f8li.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDgj5ebGQOCEk0jbakRqLRNlOQHvOqxYSI</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +15,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.expenseTrackr.dev</string>
+	<string>com.example.expenseTracker.dev</string>
 	<key>PROJECT_ID</key>
 	<string>flavour-test-51686</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +31,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:848644210356:ios:58ba80090ab932592ba1e1</string>
+	<string>1:848644210356:ios:9e7e2d73501e49002ba1e1</string>
 </dict>
 </plist>

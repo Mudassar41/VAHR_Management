@@ -3,9 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>891890956990-m2si9t71m9nmr0dh26cv251kgpvr50rl.apps.googleusercontent.com</string>
+	<string>891890956990-2opbmlmaofck2bdf1t0hv1a3efv1sqr7.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.891890956990-m2si9t71m9nmr0dh26cv251kgpvr50rl</string>
+	<string>com.googleusercontent.apps.891890956990-2opbmlmaofck2bdf1t0hv1a3efv1sqr7</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>891890956990-4t1004pnlt15loha3eoe38fs351tsn31.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDdBy5xnSZPiBvm3xkHZJn0u2RM2fJ2WMw</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +15,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.expenseTrackr</string>
+	<string>com.example.expenseTracker</string>
 	<key>PROJECT_ID</key>
 	<string>expense-tracker-ea663</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +31,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:891890956990:ios:e379805eb065ceeec4bcef</string>
+	<string>1:891890956990:ios:c553af4e76391a9dc4bcef</string>
 </dict>
 </plist>

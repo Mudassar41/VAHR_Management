@@ -8,7 +8,7 @@ import 'package:flutter/foundation.dart'
 ///
 /// Example:
 /// ```dart
-/// import 'firebase_options.dart';
+/// import 'firebase_options_prod.dart';
 /// // ...
 /// await Firebase.initializeApp(
 ///   options: DefaultFirebaseOptions.currentPlatform,
@@ -45,17 +45,17 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyB6Sgs3HC1ZRrtjxnvsYen9ZdUdr1HMdTI',
-    appId: '1:891890956990:web:c277ac019ce2652dc4bcef',
+    appId: '1:891890956990:web:ce2e8026af813953c4bcef',
     messagingSenderId: '891890956990',
     projectId: 'expense-tracker-ea663',
     authDomain: 'expense-tracker-ea663.firebaseapp.com',
     storageBucket: 'expense-tracker-ea663.appspot.com',
-    measurementId: 'G-17JDVYNSCR',
+    measurementId: 'G-QKRL0TE0YP',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyCPuZfWXWm2IQUTIRLGXjpi4jlRjY7QCZ4',
-    appId: '1:891890956990:android:8c0293b3949216afc4bcef',
+    appId: '1:891890956990:android:680e73c92538dc82c4bcef',
     messagingSenderId: '891890956990',
     projectId: 'expense-tracker-ea663',
     storageBucket: 'expense-tracker-ea663.appspot.com',
@@ -63,20 +63,22 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyDdBy5xnSZPiBvm3xkHZJn0u2RM2fJ2WMw',
-    appId: '1:891890956990:ios:e379805eb065ceeec4bcef',
+    appId: '1:891890956990:ios:c553af4e76391a9dc4bcef',
     messagingSenderId: '891890956990',
     projectId: 'expense-tracker-ea663',
     storageBucket: 'expense-tracker-ea663.appspot.com',
-    iosClientId: '891890956990-m2si9t71m9nmr0dh26cv251kgpvr50rl.apps.googleusercontent.com',
-    iosBundleId: 'com.example.expenseTrackr',
+    androidClientId: '891890956990-4t1004pnlt15loha3eoe38fs351tsn31.apps.googleusercontent.com',
+    iosClientId: '891890956990-2opbmlmaofck2bdf1t0hv1a3efv1sqr7.apps.googleusercontent.com',
+    iosBundleId: 'com.example.expenseTracker',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyDdBy5xnSZPiBvm3xkHZJn0u2RM2fJ2WMw',
-    appId: '1:891890956990:ios:e379805eb065ceeec4bcef',
+    appId: '1:891890956990:ios:b1a120afe790db48c4bcef',
     messagingSenderId: '891890956990',
     projectId: 'expense-tracker-ea663',
     storageBucket: 'expense-tracker-ea663.appspot.com',
+    androidClientId: '891890956990-4t1004pnlt15loha3eoe38fs351tsn31.apps.googleusercontent.com',
     iosClientId: '891890956990-m2si9t71m9nmr0dh26cv251kgpvr50rl.apps.googleusercontent.com',
     iosBundleId: 'com.example.expenseTrackr',
   );
